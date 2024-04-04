@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+    /* height: auto; */
+}
+body{
+    background-color: rgb(20, 1, 18);
+}
+
+.parallax-container{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    perspective: 10px;
+    position: relative;
+}
+
+.backgruond{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* Este transform no va a hacer nada, pero como para tener presente que es la capa del fondo y que no esta escalado, porque las demas capas esto lo van a tener modificado: */
+    transform: translateZ(0px) scale(1);
+}
+
+.tarjetas{
+    position: absolute;
+    transform: translateZ(7px) scale(0.35);
+    width: 100%;
+    height: 100%;
+}
+.tarjeta{
+    position: absolute;
+}
+.uno{
+    top: 20%;
+    left: 30%;
+    transform: rotate(-12deg);
+    
+}
+.dos{
+    top: 65%;
+    left: 63%;
+    transform: rotate(10deg);
+}
+.tres{
+    top: 100%;
+    left: 20%;
+    transform: rotate(20deg);
+}
+.cuatro{
+    top: 180%;
+    left: 80%;
+    transform: rotate(40deg);
+}
+.cinco{
+    top: 260%;
+    left: 35%;
+    transform: rotate(-22deg);
+}
+
+.alicia{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: translateZ(4px) scale(0.6);
+}
+
+.tarjeta{
+    width: 8%;
+    opacity: 0.8;
+}
